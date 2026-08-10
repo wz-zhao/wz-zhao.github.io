@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0c111b" media="(prefers-color-scheme: dark)" />
+  <meta name="description" content="Wenzhuo Zhao — Ph.D. student at Sichuan University working on multimodal large language models, high-resolution visual reasoning, visual evidence, and unified multimodal foundation models." />
+  <meta name="author" content="Wenzhuo Zhao" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://wz-zhao.github.io/" />
+  <meta property="og:title" content="Wenzhuo Zhao | Multimodal AI Research" />
+  <meta property="og:description" content="Multimodal LLMs, high-resolution visual reasoning, visual evidence, and unified multimodal foundation models." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wz-zhao.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <title>Wenzhuo Zhao | Multimodal AI Research</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wenzhuo Zhao",
+    "alternateName": "赵文卓",
+    "url": "https://wz-zhao.github.io/",
+    "sameAs": ["https://github.com/wz-zhao"],
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Sichuan University"},
+    "alumniOf": {"@type": "CollegeOrUniversity", "name": "Chongqing University"},
+    "knowsAbout": ["Multimodal Large Language Models", "High-Resolution Visual Question Answering", "Visual Evidence Routing", "Foundation Models", "Mamba"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-glow page-glow-a" aria-hidden="true"></div>
+  <div class="page-glow page-glow-b" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Wenzhuo Zhao homepage">
+        <span class="brand-mark">WZ</span>
+        <span class="brand-name">Wenzhuo Zhao</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#opensource">Open Source</a>
+        <a href="#honors">Honors</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cv" href="cv.html">CV</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+          <span class="theme-sun" aria-hidden="true">☀</span><span class="theme-moon" aria-hidden="true">☾</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#opensource">Open Source</a><a href="#honors">Honors</a><a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="pulse-dot" aria-hidden="true"></span> Open to research internships & collaborations</div>
+        <p class="eyebrow">MULTIMODAL LLMs · VISUAL REASONING · FOUNDATION MODELS</p>
+        <h1>Wenzhuo Zhao <span class="cn-name">赵文卓</span></h1>
+        <p class="hero-role">Ph.D. Student in Computer Science · Sichuan University</p>
+        <p class="hero-lead">
+          I study how multimodal models <strong>find the right visual evidence</strong>, <strong>preserve it through reasoning</strong>,
+          and <strong>generalize across modalities and tasks</strong> — from high-resolution MLLM reasoning to unified multimodal foundation models.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#publications">Selected Work</a>
+          <a class="button button-ghost" href="https://github.com/wz-zhao" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="button button-ghost" href="cv.html">Public CV</a>
+        </div>
+        <div class="hero-tags" aria-label="Research interests">
+          <span>Multimodal LLMs</span><span>High-Resolution VQA</span><span>Visual Evidence</span><span>Foundation Models</span><span>Mamba / SSM</span>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal" aria-label="Research profile">
+        <div class="avatar-wrap">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/113617380?v=4" alt="Wenzhuo Zhao" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <div class="avatar-fallback" aria-hidden="true">WZ</div>
+        </div>
+        <div class="hero-card-body">
+          <p class="mini-label">AT A GLANCE</p>
+          <div class="stat-row"><span>Current</span><strong>Direct Ph.D. @ SCU</strong></div>
+          <div class="stat-row"><span>Education</span><strong>CQU · Top 5%</strong></div>
+          <div class="stat-row"><span>Recent venue</span><strong>ICML 2026 · 1st author</strong></div>
+          <div class="stat-row"><span>Core direction</span><strong>MLLM / Visual Reasoning</strong></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="proof-bar section-shell reveal" aria-label="Selected research highlights">
+      <div><strong>ICML '26</strong><span>First-author foundation model</span></div>
+      <div><strong>16</strong><span>attention benchmarks</span></div>
+      <div><strong>≈4×</strong><span>video inference speedup</span></div>
+      <div><strong>22</strong><span>Samba+ datasets</span></div>
+    </section>
+
+    <section class="section-shell content-section" id="about">
+      <div class="section-heading reveal">
+        <span class="section-index">01</span>
+        <div><p class="section-kicker">PROFILE</p><h2>About</h2></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy card reveal">
+          <p>
+            I am a direct Ph.D. student at the <strong>College of Computer Science, Sichuan University</strong>.
+            I received my B.Eng. in Computer Science and Technology from <strong>Chongqing University</strong>, ranking
+            <strong>18/353 (Top 5%)</strong>.
+          </p>
+          <p>
+            My research has evolved along one consistent question: <strong>how can a multimodal model acquire and use visual evidence more reliably?</strong>
+            I approach this from three levels — unified multimodal representation, MLLM perception and localization, and high-resolution evidence-aware reasoning.
+          </p>
+        </div>
+        <div class="education-stack reveal">
+          <article class="education-item card">
+            <div class="edu-year">2025 — Present</div>
+            <h3>Sichuan University</h3>
+            <p>Direct Ph.D. · Computer Science</p>
+          </article>
+          <article class="education-item card">
+            <div class="edu-year">2021 — 2025</div>
+            <h3>Chongqing University</h3>
+            <p>B.Eng. · Computer Science and Technology · 18/353 (Top 5%)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="research">
+      <div class="section-heading reveal">
+        <span class="section-index">02</span>
+        <div><p class="section-kicker">RESEARCH TRAJECTORY</p><h2>From Unified Perception to Evidence-Aware Reasoning</h2></div>
+      </div>
+
+      <div class="trajectory reveal" aria-label="Research trajectory">
+        <article class="trajectory-step card">
+          <div class="step-label">01 · UNIFY</div>
+          <h3>Unified multimodal modeling</h3>
+          <p>Build shared architectures that generalize across images, videos, audio-visual inputs, and heterogeneous perception tasks.</p>
+          <div class="step-work">AAM · Samba+</div>
+        </article>
+        <div class="trajectory-arrow" aria-hidden="true">→</div>
+        <article class="trajectory-step card">
+          <div class="step-label">02 · UNDERSTAND</div>
+          <h3>MLLM perception & localization</h3>
+          <p>Diagnose what MLLMs already understand spatially, where object-level evidence breaks down, and how internal visual evidence can be better organized.</p>
+          <div class="step-work">MLLM diagnostics · foreground organization</div>
+        </article>
+        <div class="trajectory-arrow" aria-hidden="true">→</div>
+        <article class="trajectory-step card">
+          <div class="step-label">03 · REASON</div>
+          <h3>High-resolution visual reasoning</h3>
+          <p>Translate questions into visual evidence needs, then preserve and route the evidence required for fine-grained multimodal reasoning.</p>
+          <div class="step-work">Evidence specification · evidence routing</div>
+        </article>
+      </div>
+
+      <div class="research-note card reveal">
+        <span class="research-note-tag">CURRENT FOCUS</span>
+        <p><strong>High-resolution MLLM reasoning:</strong> making visual evidence easier to request, localize, preserve, and reuse inside multimodal models.</p>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="news">
+      <div class="section-heading reveal">
+        <span class="section-index">03</span>
+        <div><p class="section-kicker">UPDATES</p><h2>News</h2></div>
+      </div>
+      <div class="timeline card reveal">
+        <div class="timeline-item"><time>2026 / 07</time><p><strong>Research:</strong> Continuing work on high-resolution MLLM reasoning, visual evidence specification, and intermediate-layer evidence routing.</p></div>
+        <div class="timeline-item"><time>2026 / 05</time><p><strong>ICML 2026:</strong> <em>Attend to Anything</em> accepted to ICML 2026.</p></div>
+        <div class="timeline-item"><time>2026 / 02</time><p><strong>Samba+:</strong> Extended unified Mamba framework released publicly with code.</p></div>
+        <div class="timeline-item"><time>2025 / 06</time><p><strong>CVPR 2025:</strong> The preliminary Samba framework was selected as a Highlight paper.</p></div>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="publications">
+      <div class="section-heading reveal">
+        <span class="section-index">04</span>
+        <div><p class="section-kicker">SELECTED PUBLIC WORK</p><h2>Publications</h2></div>
+      </div>
+
+      <div class="publication-list">
+        <article class="publication card reveal">
+          <a class="pub-figure" href="https://arxiv.org/abs/2606.03540" target="_blank" rel="noreferrer" aria-label="Open Attend to Anything paper">
+            <img src="assets/aam_figure.jpg" alt="Overview of Attend to Anything Model" loading="lazy" />
+          </a>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="venue-badge">ICML 2026 · CCF A</span><span>First Author</span></div>
+            <h3>Attend to Anything: Foundation Model for Unified Human Attention Modeling</h3>
+            <p class="authors"><strong>Wenzhuo Zhao</strong>, Ronghao Xian, Keren Fu, Qijun Zhao</p>
+            <p class="pub-summary">
+              A unified foundation model for image, video, and audio-visual human attention, combining language-conditioned hierarchical entailment in hyperbolic space with Fokker–Planck temporal dynamics.
+            </p>
+            <div class="metric-strip"><span><strong>16</strong> benchmarks</span><span><strong>≈+6%</strong> average gain</span><span><strong>≈4×</strong> video speedup</span></div>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2606.03540" target="_blank" rel="noreferrer">Paper ↗</a><a href="https://github.com/wz-zhao/Attend-to-Anything" target="_blank" rel="noreferrer">Code ↗</a></div>
+          </div>
+        </article>
+
+        <article class="publication card reveal">
+          <a class="pub-figure" href="https://arxiv.org/abs/2602.01593" target="_blank" rel="noreferrer" aria-label="Open Samba+ paper">
+            <img src="assets/samba_figure.jpg" alt="Overview of Samba+" loading="lazy" />
+          </a>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="venue-badge">Preprint 2026 · Extended from CVPR '25 Highlight</span><span>First Author</span></div>
+            <h3>Samba+: General and Accurate Salient Object Detection via A More Unified Mamba-based Framework</h3>
+            <p class="authors"><strong>Wenzhuo Zhao</strong>, Keren Fu, Jiahao He, Xiaohong Liu, Qijun Zhao, Guangtao Zhai</p>
+            <p class="pub-summary">
+              A pure-Mamba SOD framework with spatially coherent scanning, extended into a single versatile multimodal model with graph-based fusion and modality-anchored continual learning.
+            </p>
+            <div class="metric-strip"><span><strong>6</strong> SOD task types</span><span><strong>22</strong> datasets</span><span><strong>1</strong> versatile model</span></div>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2602.01593" target="_blank" rel="noreferrer">Paper ↗</a><a href="https://github.com/wz-zhao/Samba-plus" target="_blank" rel="noreferrer">Code ↗</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="ongoing card reveal">
+        <div class="ongoing-head">
+          <div><p class="section-kicker">ONGOING RESEARCH</p><h3>Multimodal reasoning & visual evidence</h3></div>
+          <span class="privacy-badge">Anonymized during review</span>
+        </div>
+        <div class="ongoing-grid">
+          <div><strong>MLLM perception diagnostics</strong><span>Study the gap between strong entity localization and incomplete pixel-level object understanding.</span></div>
+          <div><strong>Question → visual evidence</strong><span>Compile a VQA question into clearer visual evidence requirements for high-resolution reasoning.</span></div>
+          <div><strong>Intermediate-layer evidence routing</strong><span>Preserve question-relevant evidence that appears inside MLLMs before it is diluted by visual redundancy.</span></div>
+        </div>
+        <p class="confidential-note">Exact titles and manuscript details are intentionally omitted from the public homepage while the work is under anonymous review.</p>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="opensource">
+      <div class="section-heading reveal">
+        <span class="section-index">05</span>
+        <div><p class="section-kicker">OPEN SOURCE</p><h2>GitHub</h2></div>
+      </div>
+      <div class="github-grid">
+        <a class="repo-card card reveal" data-repo="wz-zhao/Attend-to-Anything" href="https://github.com/wz-zhao/Attend-to-Anything" target="_blank" rel="noreferrer">
+          <div class="repo-top"><span class="repo-icon" aria-hidden="true">⌘</span><span class="repo-label">Research Code</span></div>
+          <h3>Attend-to-Anything ↗</h3>
+          <p>Official implementation of the ICML 2026 unified human-attention foundation model.</p>
+          <div class="repo-stats"><span>★ <b data-stars>—</b></span><span>⑂ <b data-forks>—</b></span><span class="repo-language">Python</span></div>
+        </a>
+        <a class="repo-card card reveal" data-repo="wz-zhao/Samba-plus" href="https://github.com/wz-zhao/Samba-plus" target="_blank" rel="noreferrer">
+          <div class="repo-top"><span class="repo-icon" aria-hidden="true">⌘</span><span class="repo-label">Research Code</span></div>
+          <h3>Samba-plus ↗</h3>
+          <p>Code, models, and evaluation utilities for the unified Mamba-based SOD framework.</p>
+          <div class="repo-stats"><span>★ <b data-stars>—</b></span><span>⑂ <b data-forks>—</b></span><span class="repo-language">Python</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-shell content-section" id="honors">
+      <div class="section-heading reveal">
+        <span class="section-index">06</span>
+        <div><p class="section-kicker">RECOGNITION</p><h2>Selected Honors</h2></div>
+      </div>
+      <div class="honors-grid">
+        <div class="honor-item card reveal"><span>01</span><p>CVPR Workshop Challenge — Team Lead, Silver Medal</p></div>
+        <div class="honor-item card reveal"><span>02</span><p>National Undergraduate Innovation Project — Excellent Completion, Project Lead</p></div>
+        <div class="honor-item card reveal"><span>03</span><p>Zhu Jingwen Scholarship — Top 1%</p></div>
+        <div class="honor-item card reveal"><span>04</span><p>China Internet+ Innovation & Entrepreneurship Competition — Provincial Gold Award</p></div>
+      </div>
+    </section>
+
+    <section class="section-shell contact-section reveal" id="contact">
+      <div>
+        <p class="section-kicker">CONTACT</p>
+        <h2>Interested in multimodal reasoning, MLLMs, or visual evidence?</h2>
+        <p class="contact-copy">I am open to research internships and collaborations related to multimodal large language models and visual reasoning.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button button-primary" href="mailto:1210649661@qq.com">1210649661@qq.com</a>
+        <a class="button button-ghost" href="https://github.com/wz-zhao" target="_blank" rel="noreferrer">github.com/wz-zhao ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section-shell site-footer">
+    <span>© <span id="year">2026</span> Wenzhuo Zhao</span>
+    <span>Built for GitHub Pages · Last updated Aug. 2026</span>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
