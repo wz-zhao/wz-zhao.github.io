@@ -46,3 +46,7 @@ The homepage displays the Google Scholar profile citation count beside the Schol
 After uploading the website to `wz-zhao/wz-zhao.github.io`, open **Actions → Update Google Scholar Citations → Run workflow** once. After the first successful run, the homepage will show the citation count automatically and scheduled runs will keep it refreshed.
 
 No API key or repository secret is required. Google Scholar does not provide an official public citation API, so the workflow uses the open-source `scholarly` crawler. If Google temporarily rate-limits automated access, the webpage keeps showing the last successfully fetched value.
+
+
+> Before the first successful Scholar refresh, the citation field intentionally shows `—` rather than `0`.
+> This avoids JavaScript's `Number(null) === 0` coercion from displaying a false zero.

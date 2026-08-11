@@ -61,8 +61,12 @@
         return res.json();
       })
       .then((data) => {
-        const citedby = Number(data?.citedby);
-        if (Number.isFinite(citedby) && citedby >= 0) {
+        const rawCitedby = data?.citedby;
+        // Important: Number(null) === 0, so do not coerce an uninitialized
+        // Scholar value into a fake zero before the first successful update.
+        if (rawCitedby !== null && rawCitedby !== undefined && rawCitedby !== '') {
+          const citedby = Number(rawCitedby);
+          if (!Number.isFinite(citedby) || citedby < 0) return;
           scholarCitations.textContent = citedby.toLocaleString();
           if (data?.updated) {
             scholarCitations.closest('.scholar-link')?.setAttribute(
