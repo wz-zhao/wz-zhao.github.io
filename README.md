@@ -31,3 +31,18 @@ In **Settings → Pages**, use **Deploy from a branch**, select `main` and `/ (r
 ## Privacy note
 
 The public site intentionally omits private resume fields such as phone number and date of birth. Ongoing anonymous-review projects are described only at a high level and do not expose manuscript titles or manuscript figures.
+
+
+## Google Scholar citation counter
+
+The homepage displays the Google Scholar profile citation count beside the Scholar link.
+
+- Scholar ID: `dNzUUAoAAAAJ`
+- Data file: `assets/scholar_stats.json`
+- Updater: `scripts/update_scholar.py`
+- Workflow: `.github/workflows/update-scholar-citations.yml`
+- Refresh schedule: every 6 hours (GitHub Actions; UTC)
+
+After uploading the website to `wz-zhao/wz-zhao.github.io`, open **Actions → Update Google Scholar Citations → Run workflow** once. After the first successful run, the homepage will show the citation count automatically and scheduled runs will keep it refreshed.
+
+No API key or repository secret is required. Google Scholar does not provide an official public citation API, so the workflow uses the open-source `scholarly` crawler. If Google temporarily rate-limits automated access, the webpage keeps showing the last successfully fetched value.

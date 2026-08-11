@@ -51,6 +51,32 @@
     sections.forEach(s => navObserver.observe(s));
   }
 
+
+  // Google Scholar citation count. The JSON file is refreshed by GitHub Actions.
+  const scholarCitations = document.getElementById('scholarCitations');
+  if (scholarCitations) {
+    fetch(`assets/scholar_stats.json?v=${Date.now()}`, { cache: 'no-store' })
+      .then((res) => {
+        if (!res.ok) throw new Error('Scholar stats unavailable');
+        return res.json();
+      })
+      .then((data) => {
+        const citedby = Number(data?.citedby);
+        if (Number.isFinite(citedby) && citedby >= 0) {
+          scholarCitations.textContent = citedby.toLocaleString();
+          if (data?.updated) {
+            scholarCitations.closest('.scholar-link')?.setAttribute(
+              'title',
+              `Google Scholar citations · updated ${new Date(data.updated).toLocaleString()}`
+            );
+          }
+        }
+      })
+      .catch(() => {
+        // Keep the graceful "—" fallback if the scheduled crawler has not run yet.
+      });
+  }
+
   document.querySelectorAll('[data-repo]').forEach(async (card) => {
     const repo = card.dataset.repo;
     try {
