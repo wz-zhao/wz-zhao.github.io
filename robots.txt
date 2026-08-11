@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wz-zhao.github.io/sitemap.xml
